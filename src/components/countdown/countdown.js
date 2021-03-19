@@ -1,7 +1,10 @@
 import * as React from "react"
 import {useEffect, useState} from "react"
-import moment from 'moment';
 import "./countdown.scss";
+// import moment from 'moment';
+var moment = require('moment-timezone');
+moment().tz("America/New_York").format();
+moment.tz.setDefault("America/New_York");
 
 function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
     const angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0;
@@ -50,7 +53,7 @@ const SVGCircle = ({radius}) => (
 
 const fetchCountdown = () => {
     // TODO - double check this timer because something is wonky
-    const then = moment('2021-03-21T01:01:00-04:00');
+    const then = moment('2021-03-21T02:01:00');
     const now = moment();
     return moment(then - now);
 };

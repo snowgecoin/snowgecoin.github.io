@@ -1,0 +1,2 @@
+(self.webpackChunksnowge=self.webpackChunksnowge||[]).push([[634],{7266:function(e,n,t){"use strict";t.r(n);var u=t(7294);n.default=function(){return u.createElement(u.Fragment,null)}}}]);
+//# sourceMappingURL=component---src-pages-index-js-bc8efcf127c00b382e7d.js.map
