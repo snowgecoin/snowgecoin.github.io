@@ -4,7 +4,7 @@ import Snowgeflakes from "../components/snowgeflakes/snowgeflakes";
 
 const Home = () => {
     return (
-        <div className={'app-background'}>
+        <div className={'app-background scrollbar'}>
             <NavBar/>
             <Snowgeflakes/>
         </div>

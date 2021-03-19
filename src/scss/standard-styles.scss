@@ -1,6 +1,6 @@
 @import "colours";
 
- // TODO - Might be importing this wrong for gitpages hosting
+// TODO - Might be importing this wrong for gitpages hosting
 @font-face {
   font-family: 'Hanomali';
   src: local('Hanomali'), url(../fonts/Hanomali.ttf) format('truetype');
@@ -13,9 +13,11 @@ html, body {
 }
 
 .app-background {
-  background-color: $snowge-white;
+  background-image: linear-gradient(
+                  -35deg, $snowge-blue-white 0%, $snowge-white 100%);
   height: 100vh;
   width: 100vw;
+  overflow: auto;
 }
 
 .relative {

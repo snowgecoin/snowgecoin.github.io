@@ -7,20 +7,23 @@
 }
 
 .countdown {
-  position: relative;
-  top: 50px;
+  position: absolute;
+  top: -10vh;
   font-family: Hanomali;
-  font-size: 164px;
+  font-size: calc(3vw + 60px);
+  max-font-size: 12px;
   letter-spacing: 2px;
   text-align: center;
   color: $snowge-light-blue;
 }
 
 .countdown-wrapper {
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .countdown-item {

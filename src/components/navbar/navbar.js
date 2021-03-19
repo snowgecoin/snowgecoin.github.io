@@ -40,6 +40,7 @@ const NavBar = () => {
                 <span className={'flex-spacer'}></span>
                 {/*<div className={'flex-row y-centre'}>{renderLinks}</div>*/}
             </div>
+            <span className={'flex-spacer'}></span>
             <div className={'flex-row y-centre x-centre countdown-container'}>
                 <Countdown/>
             </div>

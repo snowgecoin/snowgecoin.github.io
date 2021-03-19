@@ -2,7 +2,7 @@ import * as React from "react"
 import {useEffect, useState} from "react"
 import "./countdown.scss";
 // import moment from 'moment';
-var moment = require('moment-timezone');
+const moment = require('moment-timezone');
 moment().tz("America/New_York").format();
 moment.tz.setDefault("America/New_York");
 
@@ -66,7 +66,7 @@ const Countdown = () => {
     if (countDown.format('D') - 1 > 0) {
         daysRadius = mapNumber(countDown.format('D') - 1, 30, 0, 0, 360);
     } else {
-        daysRadius = mapNumber(0.5, 30, 0, 0, 360);
+        daysRadius = mapNumber(0, 30, 0, 0, 360);
     }
 
     const hoursRadius = mapNumber(countDown.format('HH'), 24, 0, 0, 360);
@@ -82,8 +82,8 @@ const Countdown = () => {
 
     return (
         <div>
-            <div className={'countdown'}>Pre Sale</div>
             <div className="countdown-wrapper">
+                <div className={'countdown'}>Pre Sale</div>
                 <div className="countdown-item">
                     <SVGCircle radius={daysRadius}/>
                     {countDown.format('D') > 0 ? countDown?.format('D') - 1 : 0}

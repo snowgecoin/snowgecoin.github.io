@@ -13,7 +13,6 @@
 
 .navbar {
   height: 60px;
-  background-color: $snowge-white;
   padding: 6vh 6vw;
 }
 
@@ -27,15 +26,16 @@
 }
 
 .countdown-container {
-  margin-top: 14vh;
   margin-left: 8vw;
   margin-right: 8vw;
 }
 
 .construction-text {
   color: $snowge-dark-blue;
-  font-family: Lato;
+  font-size: calc(10px + 0.2vw);
   margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
 }
 
 .presale-button-container {
