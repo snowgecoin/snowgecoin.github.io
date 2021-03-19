@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import "src/scss/colours";
+
+.header-text-styling {
+  font-family: Lato;
+  font-weight: bold;
+  color: $snowge-dark-blue
+}
+
+.navbar-container {
+  height: 100%;
+}
+
+.navbar {
+  height: 60px;
+  background-color: $snowge-white;
+  padding: 6vh 6vw;
+}
+
+.nav-header {
+  margin-left: 20px;
+}
+
+.header-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.countdown-container {
+  margin-top: 14vh;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+.construction-text {
+  color: $snowge-dark-blue;
+  font-family: Lato;
+  margin-bottom: 10px;
+}
+
+.presale-button-container {
+  margin-top: 8vh;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+.socials-container {
+  margin-top: 8vh;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}

@@ -1,0 +1,75 @@
+@import "colours";
+
+ // TODO - Might be importing this wrong for gitpages hosting
+@font-face {
+  font-family: 'Hanomali';
+  src: local('Hanomali'), url(../fonts/Hanomali.ttf) format('truetype');
+}
+
+html, body {
+  margin: 0;
+  height: 100vh;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.app-background {
+  background-color: $snowge-white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.relative {
+  position: relative;
+}
+
+.white-text {
+  color: white;
+}
+
+.black-text {
+  color: black;
+}
+
+.slightly-bolder {
+  font-weight: 500;
+}
+
+.tiny-font {
+  font-size: 12px;
+}
+
+.small-font {
+  font-size: 14px;
+}
+
+.medium-font {
+  font-size: 16px;
+}
+
+.large-font {
+  font-size: 24px;
+}
+
+.giga-large-font {
+  font-size: 32px;
+}
+
+.primary-button {
+  background-color: $snowge-light-blue !important;
+  border-color: $snowge-light-blue !important;
+}
+
+.primary-badge {
+  color: $snowge-light-blue !important;
+  border-color: $snowge-light-blue !important;
+  margin: 8px;
+}
+
+.primary-badge:hover {
+  color: white !important;
+  background-color: $snowge-light-blue !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
