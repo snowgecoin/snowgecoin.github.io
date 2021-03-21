@@ -53,7 +53,7 @@ const SVGCircle = ({radius}) => (
 
 const fetchCountdown = () => {
     // TODO - double check this timer because something is wonky
-    const then = moment('2021-03-21T02:01:00');
+    const then = moment('2021-03-21T04:15:00');
     const now = moment();
     return moment(then - now);
 };
@@ -85,7 +85,7 @@ const Countdown = () => {
     return (isReady &&
         <div>
             <div className="countdown-wrapper">
-                <div className={'countdown'}>Pre Sale</div>
+                <div className={'countdown'}>Launch</div>
                 <div className="countdown-item">
                     <SVGCircle radius={daysRadius}/>
                     {countDown.format('D') > 0 ? countDown?.format('D') - 1 : 0}
