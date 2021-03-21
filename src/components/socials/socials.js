@@ -1,5 +1,4 @@
 import * as React from "react"
-import {Badge} from "shards-react";
 import IconButton from "@material-ui/core/IconButton";
 import discordIcon from "../../images/socials/discord.svg";
 import twitterIcon from "../../images/socials/twitter.svg";

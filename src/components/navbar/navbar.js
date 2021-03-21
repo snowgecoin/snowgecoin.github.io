@@ -2,8 +2,6 @@ import * as React from "react"
 import "./navbar.scss";
 import "../../scss/standard-styles.scss";
 import logo from "../../images/Smollsnoge.png";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "shards-ui/dist/css/shards.min.css"
 import {useState} from "react";
 import {useEffect} from "react";
 import GatsbyLink from "gatsby-link";
@@ -23,7 +21,7 @@ const pages = [
 ];
 
 const openInNewTab = (url) => {
-    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
     if (newWindow) newWindow.opener = null
 };
 

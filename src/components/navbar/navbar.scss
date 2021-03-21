@@ -11,6 +11,7 @@
 
 .token-container {
   flex: 1 1 auto;
+  text-decoration: none;
 }
 
 .token-container:hover {
@@ -40,15 +41,10 @@
   text-align: center;
 }
 
-.presale-button-container {
-  margin-top: 8vh;
-  margin-left: 8vw;
-  margin-right: 8vw;
-}
-
 .link-text {
   margin-left: 20px;
   color: $snowge-light-blue;
+  text-decoration: none;
 }
 
 .link-text:hover {
@@ -57,5 +53,5 @@
 }
 
 .active-page {
-  color: $snowge-pink;
+  color: $snowge-pink !important; // Keep active page pink on hover
 }

@@ -41,9 +41,6 @@ const Snowgeflakes = () => {
             <div className={'snowflake'}>
                 <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
             </div>
-            <div className={'snowflake'}>
-                <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
-            </div>
             <div className="snowflake">
                 ❄
             </div>
@@ -55,9 +52,6 @@ const Snowgeflakes = () => {
             </div>
             <div className="snowflake">
                 ❄
-            </div>
-            <div className={'snowflake'}>
-                <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
             </div>
             <div className={'snowflake'}>
                 <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
