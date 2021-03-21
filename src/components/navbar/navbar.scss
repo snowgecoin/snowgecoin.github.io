@@ -1,23 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
 @import "src/scss/colours";
 
-.header-text-styling {
-  font-family: Lato;
-  font-weight: bold;
-  color: $snowge-dark-blue
+.navbar-wrapper {
+  box-sizing: border-box;
+  padding: 3vh 6vw;
 }
 
-.navbar-container {
-  height: 100%;
+.navbar-wrapper > * {
+  margin: 10px;
 }
 
-.navbar {
-  height: 60px;
-  padding: 6vh 6vw;
+.token-container {
+  flex: 1 1 auto;
+}
+
+.token-container:hover {
+  text-decoration: none;
 }
 
 .nav-header {
   margin-left: 20px;
+  font-weight: 500;
+  color: $snowge-dark-blue;
 }
 
 .header-logo {
@@ -35,7 +38,6 @@
   font-size: calc(10px + 0.2vw);
   margin-bottom: 10px;
   text-align: center;
-  padding: 10px;
 }
 
 .presale-button-container {
@@ -44,8 +46,16 @@
   margin-right: 8vw;
 }
 
-.socials-container {
-  margin-top: 8vh;
-  margin-left: 8vw;
-  margin-right: 8vw;
+.link-text {
+  margin-left: 20px;
+  color: $snowge-light-blue;
+}
+
+.link-text:hover {
+  text-decoration: none;
+  color: $snowge-dark-blue;
+}
+
+.active-page {
+  color: $snowge-pink;
 }

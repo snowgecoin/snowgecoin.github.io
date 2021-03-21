@@ -59,6 +59,7 @@ const fetchCountdown = () => {
 };
 
 const Countdown = () => {
+    const [isReady, setIsReady] = useState(false);
     const [countDown, setCountdown] = useState(fetchCountdown());
 
     // Mapping the date values to radius values
@@ -74,13 +75,14 @@ const Countdown = () => {
     const secondsRadius = mapNumber(countDown.format('ss'), 60, 0, 0, 360);
 
     useEffect(() => {
+        document.fonts.load("12px Hanomali").then(() => setIsReady(true));
         const interval = setInterval(() => {
             setCountdown(fetchCountdown());
         }, 1000);
         return () => clearInterval(interval);
     }, []);
 
-    return (
+    return (isReady &&
         <div>
             <div className="countdown-wrapper">
                 <div className={'countdown'}>Pre Sale</div>

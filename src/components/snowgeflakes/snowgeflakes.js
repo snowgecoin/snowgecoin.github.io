@@ -9,61 +9,58 @@ const Snowgeflakes = () => {
                 ❅
             </div>
             <div className={'snowflake'}>
-                <img src={logo} className={'snowgeflake'}></img>
+                <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
             </div>
             <div className="snowflake">
                 ❅
             </div>
             <div className={'snowflake'}>
-                <img src={logo} className={'snowgeflake'}></img>
+                <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
             </div>
             <div className="snowflake">
                 ❆
             </div>
             <div className={'snowflake'}>
-                <img src={logo} className={'snowgeflake'}></img>
+                <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
             </div>
             <div className="snowflake">
                 ❄
             </div>
             <div className={'snowflake'}>
-                <img src={logo} className={'snowgeflake'}></img>
+                <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
             </div>
             <div className="snowflake">
                 ❅
             </div>
             <div className={'snowflake'}>
-                <img src={logo} className={'snowgeflake'}></img>
+                <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
             </div>
             <div className="snowflake">
                 ❆
             </div>
             <div className={'snowflake'}>
-                <img src={logo} className={'snowgeflake'}></img>
+                <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
             </div>
             <div className={'snowflake'}>
-                <img src={logo} className={'snowgeflake'}></img>
+                <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
             </div>
             <div className="snowflake">
                 ❄
             </div>
             <div className={'snowflake'}>
-                <img src={logo} className={'snowgeflake'}></img>
+                <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
             </div>
             <div className="snowflake">
                 ❅
             </div>
-            <div className={'snowflake'}>
-                <img src={logo} className={'snowgeflake'}></img>
-            </div>
-            <div className="snowflake">
-                ❆
-            </div>
-            <div className={'snowflake'}>
-                <img src={logo} className={'snowgeflake'}></img>
-            </div>
             <div className="snowflake">
                 ❄
+            </div>
+            <div className={'snowflake'}>
+                <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
+            </div>
+            <div className={'snowflake'}>
+                <img src={logo} alt={'snowge'} className={'snowgeflake'}/>
             </div>
         </div>
     )
