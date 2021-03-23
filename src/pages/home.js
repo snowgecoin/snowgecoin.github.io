@@ -17,7 +17,7 @@ const Home = () => {
                 <div className={'x-centre'}>The remaining website content is under construction. The SnowgeCrew is
                     working hard to deliver more information on this project - we're moving at lightspeed.</div>
                 <div className={'x-centre'}>
-                    Token address: <b>0x5E9280d53F28281Ce098C8F64e49F5f5DC9Ea185</b>
+                    Token address: <b>0x5E9280d53F2828s1Ce098C8F64e49F5f5DC9Ea185</b>
                 </div>
                 <div>
                     <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x5e9280d53f28281ce098c8f64e49f5f5dc9ea185" target="_blank" rel="noreferrer">

@@ -55,3 +55,11 @@
 .active-page {
   color: $snowge-pink !important; // Keep active page pink on hover
 }
+
+.new-tab-icon {
+  position: relative;
+  top: -4px;
+  font-size: 14px !important; // IDK why this is needed
+  height: 10px;
+  width: 10px;
+}
