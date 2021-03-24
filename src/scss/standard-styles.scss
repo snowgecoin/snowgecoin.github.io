@@ -15,17 +15,24 @@ html, body {
 .app-background {
   background-image: linear-gradient(
                   -35deg, $snowge-blue-white 0%, $snowge-white 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .home-div {
   position: relative;
-  height: 100vh;
+  height: 100%;
   box-sizing: border-box;
 }
 
 .home-banner {
-  flex: 1 1 auto;
+  min-height: 100vh;
   box-sizing: border-box;
+}
+
+.home-spacer {
+  height: 40%;
 }
 
 .tokenomics-banner {

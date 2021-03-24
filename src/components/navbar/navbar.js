@@ -22,15 +22,15 @@ const NavBar = ({toggleSnow}) => {
     const [activeBackground, setActiveBackground] = useState('');
     useEffect(() => {
         setActivePage(window.location.pathname.replaceAll('/', ''));
+        window.addEventListener('scroll', () => {
+            console.log();
+            if (window.scrollY < (window.innerHeight / 10)) {
+                setActiveBackground('remove-background');
+            } else {
+                setActiveBackground('navbar-background');
+            }
+        });
     }, [activePage]);
-
-    // window.addEventListener('scroll', () => {
-    //     if (window.scrollY < 125) {
-    //         setActiveBackground('remove-background');
-    //     } else {
-    //         setActiveBackground('navbar-background');
-    //     }
-    // });
 
     return (
         <div className={`navbar-wrapper flex-row y-centre x-centre wrap ${activeBackground}`}>

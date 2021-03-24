@@ -20,6 +20,10 @@
 .snowge-contract-addy {
   margin-top: 20px;
   font-size: min(calc(4vw + 10px), 16px);
+  padding-left: 10px;
+  padding-right: 10px;
+  word-break: break-all;
+  font-weight: 500;
 }
 
 .snowge-buttons-div {
@@ -32,7 +36,7 @@
 
 .snowge-button {
   border-radius: 11px !important;
-  margin-bottom: 10px !important;
+  margin: 10px !important;
 }
 
 .pcs-button {

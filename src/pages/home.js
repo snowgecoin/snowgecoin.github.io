@@ -8,11 +8,16 @@ import "shards-ui/dist/css/shards.min.css"
 import {useState} from "react";
 import SnowgeIntroduction from "../components/snowgeIntroduction/snowgeIntroduction";
 import Tokenomics from "../components/tokenomics/tokenomics";
+import {useEffect} from "react";
 
 const Home = () => {
+    const [isReady, setIsReady] = useState(false);
+    useEffect(() => {
+        document.fonts.load("24px 'Material Icons'").then(() => setIsReady(true));
+    }, []);
     const [toggleSnow, setToggleSnow] = useState(true);
 
-    return (
+    return (isReady &&
         <div className={'app-background flex-column'}>
             {toggleSnow && (
                 <Snowgeflakes/>
@@ -22,22 +27,23 @@ const Home = () => {
                 <div className={'flex-column x-centre y-centre home-banner'}>
                     <SnowgeIntroduction/>
                 </div>
-            </div>
-            {/*<div className={'flex-column x-centre y-centre how-to-buy-banner'}>*/}
-            {/*    <Tokenomics/>*/}
-            {/*</div>*/}
-            {/*<div className={'flex-column x-centre y-centre tokenomics-banner'}>*/}
-            {/*    not yet*/}
-            {/*</div>*/}
-            {/*<div className={'flex-column x-centre y-centre roadmap-banner'}>*/}
-            {/*    not yet*/}
-            {/*</div>*/}
-            {/*<div className={'flex-column x-centre y-centre donate-banner'}>*/}
-            {/*    not yet*/}
-            {/*</div>*/}
-            <Socials/>
-            <div className={'flex-row x-centre construction-text'}>*This site is still buried under a snowgestorm.
-                Emergency crews are working around the clock to dig it back up!*
+
+                {/*<div className={'flex-column x-centre y-centre how-to-buy-banner'}>*/}
+                {/*    <Tokenomics/>*/}
+                {/*</div>*/}
+                {/*<div className={'flex-column x-centre y-centre tokenomics-banner'}>*/}
+                {/*    not yet*/}
+                {/*</div>*/}
+                {/*<div className={'flex-column x-centre y-centre roadmap-banner'}>*/}
+                {/*    not yet*/}
+                {/*</div>*/}
+                {/*<div className={'flex-column x-centre y-centre donate-banner'}>*/}
+                {/*    not yet*/}
+                {/*</div>*/}
+                <Socials/>
+                <div className={'flex-row x-centre construction-text'}>*This site is still buried under a snowgestorm.
+                    Emergency crews are working around the clock to dig it back up!*
+                </div>
             </div>
         </div>
     )
