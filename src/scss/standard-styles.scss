@@ -15,9 +15,33 @@ html, body {
 .app-background {
   background-image: linear-gradient(
                   -35deg, $snowge-blue-white 0%, $snowge-white 100%);
+}
+
+.home-div {
+  position: relative;
   height: 100vh;
-  width: 100vw;
-  overflow: auto;
+  box-sizing: border-box;
+}
+
+.home-banner {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+}
+
+.tokenomics-banner {
+  height: 400px;
+}
+
+.how-to-buy-banner {
+  height: 400px;
+}
+
+.roadmap-banner {
+  height: 400px;
+}
+
+.donate-banner {
+  height: 400px;
 }
 
 .page-container {

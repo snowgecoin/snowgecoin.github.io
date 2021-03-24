@@ -5,21 +5,35 @@ import logo from "../../images/Smollsnoge.png";
 import {useState} from "react";
 import {useEffect} from "react";
 import GatsbyLink from "gatsby-link";
-import {OpenInNew} from "@material-ui/icons";
+import {AcUnitRounded, OpenInNewRounded} from "@material-ui/icons";
+import Tooltip from "@material-ui/core/Tooltip";
 
 const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
     if (newWindow) newWindow.opener = null
 };
 
-const NavBar = () => {
+function getScrollPosition() {
+
+}
+
+const NavBar = ({toggleSnow}) => {
     const [activePage, setActivePage] = useState('');
+    const [activeBackground, setActiveBackground] = useState('');
     useEffect(() => {
         setActivePage(window.location.pathname.replaceAll('/', ''));
     }, [activePage]);
 
+    // window.addEventListener('scroll', () => {
+    //     if (window.scrollY < 125) {
+    //         setActiveBackground('remove-background');
+    //     } else {
+    //         setActiveBackground('navbar-background');
+    //     }
+    // });
+
     return (
-        <div className={'navbar-wrapper flex-row y-centre x-centre wrap'}>
+        <div className={`navbar-wrapper flex-row y-centre x-centre wrap ${activeBackground}`}>
             <GatsbyLink className={'flex-row y-centre pointer token-container'} to={'/home'}>
                 <img src={logo} alt={'snowge'} className={'header-logo'}/>
                 <div className={'giga-large-font slightly-bold nav-header'}>SnowgeCoin</div>
@@ -27,11 +41,14 @@ const NavBar = () => {
             <GatsbyLink
                 className={`pointer link-text slightly-bolder ${activePage === 'roadmap' ? 'active-page' : ''}`}
                 key={1} to={'/roadmap'} onClick={() => setActivePage('roadmap')}>Roadmap</GatsbyLink>
-            <div className={'pointer link-text slightly-bolder'} role = "link"
+            <div className={'pointer link-text slightly-bolder'} role="link"
                  onClick={() => openInNewTab('https://snowge.s3.amazonaws.com/SnowgeCoinFloofyPaper.pdf')}>
                 <span>Floofypaper</span>
-                <OpenInNew className={'new-tab-icon'}></OpenInNew>
+                <OpenInNewRounded className={'new-tab-icon'}></OpenInNewRounded>
             </div>
+            <Tooltip title="Toggle snowstorm" enterDelay={600}>
+                <AcUnitRounded onClick={toggleSnow} tooltip={'toggle snow'} className={'snow-button pointer'}></AcUnitRounded>
+            </Tooltip>
         </div>
     )
 };

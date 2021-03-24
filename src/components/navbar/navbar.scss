@@ -1,8 +1,21 @@
 @import "src/scss/colours";
 
 .navbar-wrapper {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
   box-sizing: border-box;
   padding: 3vh 6vw;
+}
+
+.remove-background {
+  background-color: transparent;
+  transition: background-color 200ms linear;
+}
+
+.navbar-background {
+  background-color: $snowge-white;
+  transition: background-color 200ms linear;
 }
 
 .navbar-wrapper > * {
@@ -38,6 +51,8 @@
   color: $snowge-dark-blue;
   font-size: calc(10px + 0.2vw);
   margin-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
   text-align: center;
 }
 
@@ -62,4 +77,12 @@
   font-size: 14px !important; // IDK why this is needed
   height: 10px;
   width: 10px;
+}
+
+.snow-button {
+  color: $snowge-light-blue;
+}
+
+.snow-button:hover {
+  color: $snowge-dark-blue;
 }

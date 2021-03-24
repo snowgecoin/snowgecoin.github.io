@@ -90,7 +90,7 @@ function fetchContent(index) {
                             <div>Have a PROPER website</div>
                         </div>
                         <div className={'milestone-content flex-row wrap'}>I'm sorry frens Master Snowge has been riding
-                            me hard but by end of Q3 I promis you I will deliver a nice website to Master Snowge with
+                            me hard but by end of Q2 I promis you I will deliver a nice website to Master Snowge with
                             loads more functionality.
                         </div>
                     </div>
