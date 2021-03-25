@@ -2,6 +2,14 @@
 import * as React from "react"
 import "./snowgeIntroduction.scss";
 import Button from "@material-ui/core/Button";
+import CountUp from 'react-countup';
+
+const easingFn = (t, b, c, d) => {
+	t /= d/2;
+	if (t < 1) return c/2*t*t*t*t*t + b;
+	t -= 2;
+	return c/2*(t*t*t*t*t + 2) + b;
+};
 
 const SnowgeIntroduction = () => {
   // const [price, setPrice] = useState([])
@@ -34,19 +42,24 @@ const SnowgeIntroduction = () => {
 
             <div className={'numbers-div flex-row x-centre wrap'}>
                 <div className={'flex-column y-centre number-entry'}>
-                    <div className={'number-text'}>1 billion</div>
+                    <div className={'number-text'}><CountUp start={0} separator="," end={1000000000} delay={0} easingFn={easingFn} delay={0} duration={4}/></div>
                     <div>Total Supply</div>
                 </div>
                 <div className={'flex-column y-centre number-entry'}>
-                    <div className={'number-text'}>$2,000,000+</div>
-                    <div>Current Market Cap</div>
+                    <div className={'number-text'}><CountUp start={0} separator="," end={16000000} delay={0} easingFn={easingFn} delay={0} duration={4}/>+</div>
+                    <div>Total Burned</div>
                 </div>
                 <div className={'flex-column y-centre number-entry'}>
-                    <div className={'number-text'}>6500+</div>
-                    <div>Current Transactions</div>
+                    <div className={'number-text'}>$<CountUp start={0} separator="," end={2000000} delay={0} easingFn={easingFn} delay={0} duration={4}/>+</div>
+                    <div>Market Cap</div>
                 </div>
                 <div className={'flex-column y-centre number-entry'}>
-                    <div className={'number-text'}>1700+</div>
+                    <div className={'number-text'}><CountUp start={0} separator="," end={6500} delay={0} easingFn={easingFn} delay={0} duration={4}/>+</div>
+                    <div>Transactions</div>
+                </div>
+                <div className={'flex-column y-centre number-entry'}>
+                    <div className={'number-text'}><CountUp start={0} separator="," end={1700} easingFn={easingFn} delay={0} duration={4}/>+</div>
+
                     <div>Unique Holders</div>
                 </div>
             </div>
