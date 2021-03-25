@@ -23,11 +23,11 @@ const SnowgeIntroduction = () => {
                         target="_blank" rel="noreferrer">Buy on Pancake Swap</Button>
                 <Button variant="contained" className={'snowge-button goswap-button'}
                         href="https://goswappcharts.web.app/?isbsc=true&tokenId=0x5E9280d53F28281Ce098C8F64e49F5f5DC9Ea185"
-                        target="_blank" rel="noreferrer">GoSwapp Chart</Button>
+                        target="_blank" rel="noreferrer">GoSwaap Chart</Button>
                 <Button variant="contained" className={'snowge-button poo-button'}
                         href="https://poocoin.app/tokens/0x5e9280d53f28281ce098c8f64e49f5f5dc9ea185"
                         target="_blank" rel="noreferrer">Poocoin Chart</Button>
-                <Button variant="contained" className={'snowge-button'}
+                <Button variant="contained" className={'snowge-button bsc-button'}
                         href="https://bscscan.com/token/0x5e9280d53f28281ce098c8f64e49f5f5dc9ea185"
                         target="_blank" rel="noreferrer">Snowge on BSCScan</Button>
             </div>
@@ -42,11 +42,11 @@ const SnowgeIntroduction = () => {
                     <div>Current Market Cap</div>
                 </div>
                 <div className={'flex-column y-centre number-entry'}>
-                    <div className={'number-text'}>5000+</div>
+                    <div className={'number-text'}>6500+</div>
                     <div>Current Transactions</div>
                 </div>
                 <div className={'flex-column y-centre number-entry'}>
-                    <div className={'number-text'}>1400+</div>
+                    <div className={'number-text'}>1700+</div>
                     <div>Unique Holders</div>
                 </div>
             </div>

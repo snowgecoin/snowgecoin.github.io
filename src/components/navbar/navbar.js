@@ -23,8 +23,7 @@ const NavBar = ({toggleSnow}) => {
     useEffect(() => {
         setActivePage(window.location.pathname.replaceAll('/', ''));
         window.addEventListener('scroll', () => {
-            console.log();
-            if (window.scrollY < (window.innerHeight / 10)) {
+            if (window.scrollY < (window.innerHeight / 12)) {
                 setActiveBackground('remove-background');
             } else {
                 setActiveBackground('navbar-background');

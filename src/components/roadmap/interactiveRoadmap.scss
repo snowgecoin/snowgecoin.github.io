@@ -4,6 +4,7 @@
   margin-top: 4vh;
   width: 95vw;
   max-width: 1000px;
+  flex: 1 1 auto;
 }
 
 .roadnav-container {
@@ -44,19 +45,19 @@
 }
 
 .passed {
-  background-color: $accent-two;
+  background-color: $accent-one;
 }
 
 .not-passed {
-  Border: 1px solid ($accent-two);
+  Border: 1px solid ($accent-one);
 }
 
 .on-the-way {
-  background: linear-gradient(90deg, $accent-two 75%, #FAFAFA 25%);
+  background: linear-gradient(90deg, $accent-one 75%, #FAFAFA 25%);
 }
 
 .active-node {
-  background-color: $snowge-light-blue;
+  background-color: $accent-two;
 }
 
 .info-card {

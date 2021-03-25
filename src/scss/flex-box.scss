@@ -21,6 +21,10 @@ Reduces duplicate code by providing heavily used code blocks
   flex-wrap: wrap;
 }
 
+.reverse-wrap {
+  flex-wrap: wrap-reverse;
+}
+
 .flex-end {
   justify-content: flex-end;
 }

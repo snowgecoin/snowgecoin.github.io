@@ -9,6 +9,8 @@ import {useState} from "react";
 import SnowgeIntroduction from "../components/snowgeIntroduction/snowgeIntroduction";
 import Tokenomics from "../components/tokenomics/tokenomics";
 import {useEffect} from "react";
+import HowToBuy from "../components/howToBuy/howToBuy";
+import RoadMap from "../components/roadmap/roadmap";
 
 const Home = () => {
     const [isReady, setIsReady] = useState(false);
@@ -27,16 +29,15 @@ const Home = () => {
                 <div className={'flex-column x-centre y-centre home-banner'}>
                     <SnowgeIntroduction/>
                 </div>
-
-                {/*<div className={'flex-column x-centre y-centre how-to-buy-banner'}>*/}
-                {/*    <Tokenomics/>*/}
-                {/*</div>*/}
-                {/*<div className={'flex-column x-centre y-centre tokenomics-banner'}>*/}
-                {/*    not yet*/}
-                {/*</div>*/}
-                {/*<div className={'flex-column x-centre y-centre roadmap-banner'}>*/}
-                {/*    not yet*/}
-                {/*</div>*/}
+                <div className={'flex-column x-centre y-centre how-to-buy-banner'}>
+                    <HowToBuy/>
+                </div>
+                <div className={'flex-column x-centre y-centre tokenomics-banner'}>
+                    <Tokenomics/>
+                </div>
+                <div className={'flex-column x-centre y-centre roadmap-banner'}>
+                    <RoadMap/>
+                </div>
                 {/*<div className={'flex-column x-centre y-centre donate-banner'}>*/}
                 {/*    not yet*/}
                 {/*</div>*/}

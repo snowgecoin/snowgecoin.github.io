@@ -45,7 +45,7 @@ function fetchContent(index) {
                     </div>
                     <div className={'milestone-container fade-animation'}>
                         <div className={'flex-row y-centre wrap milestone-header'}>
-                            <div className={'not-passed milestone-complete'}></div>
+                            <div className={'passed milestone-complete'}></div>
                             <div className={'slightly-bolder'}>Milestone 3</div>
                             <span>&nbsp;-&nbsp;</span>
                             <div>Meme Contest + Airdrops</div>
@@ -87,7 +87,7 @@ function fetchContent(index) {
                             <div className={'not-passed milestone-complete'}></div>
                             <div className={'slightly-bolder'}>Milestone 2</div>
                             <span>&nbsp;-&nbsp;</span>
-                            <div>Have a PROPER website</div>
+                            <div>Website upgrades</div>
                         </div>
                         <div className={'milestone-content flex-row wrap'}>I'm sorry frens Master Snowge has been riding
                             me hard but by end of Q2 I promis you I will deliver a nice website to Master Snowge with

@@ -1,0 +1,38 @@
+@import 'src/scss/colours';
+
+.rm-container {
+  margin: 2vw;
+  width: 90%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.rm-title {
+  margin-top: calc(1vh + 10px);
+  margin-bottom: calc(1vh + 10px);
+}
+
+.quarter-card {
+  width: 30%;
+  min-width: 280px;
+  max-width: 280px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+.rm-quarter-title {
+  color: white;
+  background-color: $accent-two;
+  border-radius: 5px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.rm-milestone {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.rm-complete {
+  top: 6px;
+}

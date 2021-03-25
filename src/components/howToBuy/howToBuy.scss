@@ -1,0 +1,33 @@
+.how-to-buy-container {
+  margin: 2vw;
+  width: 90%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.left-column {
+  width: calc(60% + 60px);
+}
+
+.right-column {
+  flex: 1 1 auto;
+}
+
+.how-to-title {
+  margin-top: calc(1vh + 10px);
+  margin-bottom: calc(1vh + 10px);
+}
+
+.buy-snowge {
+  position: relative;
+  top: 10px;
+  //padding: 2vw 0 2vw 2vw;
+  height: 300px;
+}
+
+.how-to-step {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  min-height: 80px;
+}
