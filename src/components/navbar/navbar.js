@@ -45,6 +45,11 @@ const NavBar = ({toggleSnow}) => {
                 <span>Floofypaper</span>
                 <OpenInNewRounded className={'new-tab-icon'}></OpenInNewRounded>
             </div>
+            <div className={'pointer link-text slightly-bolder'} role="link"
+                 onClick={() => openInNewTab('https://snowgecoin.medium.com')}>
+                <span>Medium</span>
+                <OpenInNewRounded className={'new-tab-icon'}></OpenInNewRounded>
+            </div>
             <Tooltip title="Toggle snowstorm" enterDelay={600}>
                 <AcUnitRounded onClick={toggleSnow} tooltip={'toggle snow'} className={'snow-button pointer'}></AcUnitRounded>
             </Tooltip>
