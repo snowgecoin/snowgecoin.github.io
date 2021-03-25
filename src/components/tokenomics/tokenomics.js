@@ -24,7 +24,7 @@ const Tokenomics = () => {
                 During our adventure forking Safemoon we realized that the LP that was meant to be permanently locked away was actually easily accessible; in fact, this capability has
                 been abused by a lot of other deflationary tokens. This is a big no no with us so we decided to be good floofers and permanently remove the ability to
                 withdraw the collected fees from the LP. As far as we can tell we are one of very few to have done this fairly and openly, as we burned $18,000 worth of liquidity pool tokens and then
-                renounced the token contract by transferring its ownership to a burned address. We are a purely non-profit team, and the SnowgeCoin token runs solely on community. Community over greed, always.
+                renounced the token contract by transferring its ownership to a burned address. We are a purely non-profit team, and the SnowgeCoin token runs solely on community. <b>Community over greed, always.</b>
             </span>
             <div className={'token-spacer'}>Please note Snowge is all our original IP and all assets are owned by us.</div>
             <div className={'slightly-bolder'}>Snowge is 100% rug free and we have the receipts to prove it.</div>

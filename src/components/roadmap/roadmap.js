@@ -12,7 +12,7 @@ const RoadMap = () => {
                         <div className={'passed milestone-complete rm-complete'}></div>
                         <div className={'slightly-bolder'}>Milestone 1</div>
                         <span>&nbsp;-&nbsp;</span>
-                        <div>Snowge Pre Sale</div>
+                        <div>Snowge Pre Sale on DxSale</div>
                     </div>
                     <div className={'flex-row wrap milestone-header rm-milestone'}>
                         <div className={'passed milestone-complete rm-complete'}></div>
@@ -30,7 +30,7 @@ const RoadMap = () => {
                         <div className={'not-passed milestone-complete rm-complete'}></div>
                         <div className={'slightly-bolder'}>Milestone 4</div>
                         <span>&nbsp;-&nbsp;</span>
-                        <div>TechRate Audit</div>
+                        <div>TechRate Audit (In Progress)</div>
                     </div>
                 </div>
                 <div className={'flex-column quarter-card'}>
@@ -39,13 +39,13 @@ const RoadMap = () => {
                         <div className={'not-passed milestone-complete rm-complete'}></div>
                         <div className={'slightly-bolder'}>Milestone 1</div>
                         <span>&nbsp;-&nbsp;</span>
-                        <div>CMC, CG, and Blockfolio Listing</div>
+                        <div>CoinMarketCap, CoinGecko, and Blockfolio Listing</div>
                     </div>
                     <div className={'flex-row wrap milestone-header rm-milestone'}>
                         <div className={'not-passed milestone-complete rm-complete'}></div>
                         <div className={'slightly-bolder rm-complete'}>Milestone 2</div>
                         <span>&nbsp;-&nbsp;</span>
-                        <div>Website upgrades</div>
+                        <div>Website Upgrades (In Progress)</div>
                     </div>
                     <div className={'flex-row wrap milestone-header rm-milestone'}>
                         <div className={'not-passed milestone-complete rm-complete'}></div>
@@ -66,7 +66,7 @@ const RoadMap = () => {
                         <div className={'not-passed milestone-complete rm-complete'}></div>
                         <div className={'slightly-bolder'}>Milestone 1</div>
                         <span>&nbsp;-&nbsp;</span>
-                        <div>Snowge NFTs</div>
+                        <div>SnowgeCoin Trading Card NFTs</div>
                     </div>
                     <div className={'flex-row wrap milestone-header rm-milestone'}>
                         <div className={'not-passed milestone-complete rm-complete'}></div>
