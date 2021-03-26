@@ -27,10 +27,10 @@ const RoadMap = () => {
                         <div>Meme Contest + Airdrops</div>
                     </div>
                     <div className={'flex-row wrap milestone-header rm-milestone'}>
-                        <div className={'not-passed milestone-complete rm-complete'}></div>
+                        <div className={'passed milestone-complete rm-complete'}></div>
                         <div className={'slightly-bolder'}>Milestone 4</div>
                         <span>&nbsp;-&nbsp;</span>
-                        <div>TechRate Audit (In Progress)</div>
+                        <div>TechRate Audit (<a href="https://snowge.s3.amazonaws.com/Snowge+Coin(1).pdf" target="_blank">Passed</a>!)</div>
                     </div>
                 </div>
                 <div className={'flex-column quarter-card'}>
