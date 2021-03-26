@@ -27,6 +27,15 @@ const Home = () => {
                 )}
                 <div className={'flex-column home-div'}>
                     <Helmet>
+                        <script src="./web3-utils.min.js?v=20.12.0.2" />
+                        <script src="./web3-eth.min.js?v=20.12.0.2" />
+                        <script src="./web3-providers-http.min.js?v=20.12.0.2" />
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.min.js"/>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/9.0.1/bignumber.min.js"/>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"/>
+                        <script src="./dashboard-widget-2.js" />
+                    </Helmet>
+                    <Helmet>
                         <title>SnowgeCoin | The Floofiest Cryptocurrency</title>
                     </Helmet>
                     <NavBar toggleSnow={() => setToggleSnow(!toggleSnow)}/>

@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://snowge/./src/pages/index.js"],"names":[],"mappings":"0HAQA,UANkB,WACd,OACI","file":"component---src-pages-index-js-bc8efcf127c00b382e7d.js","sourcesContent":["import * as React from \"react\"\r\n\r\nconst IndexPage = () => {\r\n    return(\r\n        <></>\r\n    );\r\n};\r\n\r\nexport default IndexPage\r\n"],"sourceRoot":""}

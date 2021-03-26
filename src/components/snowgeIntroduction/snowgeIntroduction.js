@@ -42,23 +42,27 @@ const SnowgeIntroduction = () => {
 
             <div className={'numbers-div flex-row x-centre wrap'}>
                 <div className={'flex-column y-centre number-entry'}>
-                    <div className={'number-text'}><CountUp start={0} separator="," end={1000000000} delay={0} easingFn={easingFn} delay={0} duration={4}/></div>
+                    <div id="activeSupply" className={'number-text'}><CountUp start={0} separator="," end={1000000000} delay={0} easingFn={easingFn}duration={4}/></div>
                     <div>Total Supply</div>
                 </div>
                 <div className={'flex-column y-centre number-entry'}>
-                    <div className={'number-text'}><CountUp start={0} separator="," end={16000000} delay={0} easingFn={easingFn} delay={0} duration={4}/>+</div>
+                    <div id="activeBurn" className={'number-text'}><CountUp start={0} separator="," end={16000000} delay={0} easingFn={easingFn} duration={4}/>+</div>
                     <div>Total Burned</div>
                 </div>
                 <div className={'flex-column y-centre number-entry'}>
-                    <div className={'number-text'}>$<CountUp start={0} separator="," end={2000000} delay={0} easingFn={easingFn} delay={0} duration={4}/>+</div>
+                    <div id="currentPrice" className={'number-text'}>$<CountUp start={0} decimals={5} separator="," end={0.0016} delay={0} easingFn={easingFn} duration={4}/></div>
+                    <div>Price</div>
+                </div>
+                <div className={'flex-column y-centre number-entry'}>
+                    <div id="marketCap" className={'number-text'}>$<CountUp start={0} separator="," end={2000000} delay={0} easingFn={easingFn} duration={4}/>+</div>
                     <div>Market Cap</div>
                 </div>
                 <div className={'flex-column y-centre number-entry'}>
-                    <div className={'number-text'}><CountUp start={0} separator="," end={6500} delay={0} easingFn={easingFn} delay={0} duration={4}/>+</div>
+                    <div id="transactions" className={'number-text'}><CountUp start={0} separator="," end={6500} delay={0} easingFn={easingFn} duration={4}/>+</div>
                     <div>Transactions</div>
                 </div>
                 <div className={'flex-column y-centre number-entry'}>
-                    <div className={'number-text'}><CountUp start={0} separator="," end={1700} easingFn={easingFn} delay={0} duration={4}/>+</div>
+                    <div id="totalHolders" className={'number-text'}><CountUp start={0} separator="," end={1700} delay={0} easingFn={easingFn} duration={4}/>+</div>
 
                     <div>Unique Holders</div>
                 </div>
