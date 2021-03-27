@@ -2,6 +2,7 @@ import * as React from "react"
 import "./navbar.scss";
 import "../../scss/standard-styles.scss";
 import logo from "../../images/Smollsnoge.png";
+import animatedSnowge from "../../video/anisnowge.mp4"
 import {useState} from "react";
 import {useEffect} from "react";
 import GatsbyLink from "gatsby-link";
@@ -34,7 +35,9 @@ const NavBar = ({toggleSnow}) => {
     return (
         <div className={`navbar-wrapper flex-row y-centre x-centre wrap ${activeBackground}`}>
             <GatsbyLink className={'flex-row y-centre pointer token-container'} to={'/home'}>
-                <img src={logo} alt={'snowge'} className={'header-logo'}/>
+                <video autoPlay loop muted id='floofyboi'>
+                  <source src={animatedSnowge} type='video/mp4'/>
+                </video>
                 <div className={'giga-large-font slightly-bold nav-header'}>SnowgeCoin</div>
             </GatsbyLink>
             <GatsbyLink

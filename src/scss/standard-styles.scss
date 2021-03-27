@@ -6,6 +6,11 @@
   src: local('Hanomali'), url(../fonts/Hanomali.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Baloo-Regular';
+  src: local('Baloo-Regular'), url(../fonts/Baloo-Regular.ttf) format('truetype');
+}
+
 html, body {
   margin: 0;
   height: 100vh;

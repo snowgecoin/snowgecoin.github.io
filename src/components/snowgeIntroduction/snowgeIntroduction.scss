@@ -1,5 +1,10 @@
 @import "src/scss/colours";
 
+#floofyboibig {
+  width: 200px;
+  border-radius: 50%;
+}
+
 .snowge-introduction-container {
   height: 100%;
   width: 90%;
@@ -27,7 +32,7 @@
 }
 
 .snowge-buttons-div {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
   width: 100%;
   max-width: 800px;
@@ -36,28 +41,40 @@
 
 .snowge-button {
   border-radius: 11px !important;
-  margin: 10px !important;
+  margin: 3% !important;
+  padding: 10px;
 }
 
 .pcs-button {
+  margin-top: 5% !important;
   background-color: $snowge-light-blue !important;
   color: $snowge-white !important;
 }
 
 .goswap-button {
-  background-color: $accent-two !important;
-  color: $snowge-white !important;
+  border-color: $accent-three !important;
 }
 
-.poo-button {
-  background-color: saddlebrown !important;
-  color: $snowge-white !important;
+.blockfolio-button {
+  border-color: $accent-two !important;
 }
 
 .bsc-button {
-  background-color: white !important;
+  border-color: $snowge-dark-blue !important;
 }
 
+.tokendata-button {
+  width: 25%;
+}
+
+.tokendata-button:hover {
+  filter:grayscale(100%);
+}
+
+.tokendata-button-icon {
+  height: 90%;
+  width: 90%;
+}
 
 .numbers-div {
   margin-top: 40px;
