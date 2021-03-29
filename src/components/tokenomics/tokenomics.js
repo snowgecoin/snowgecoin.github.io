@@ -33,7 +33,7 @@ const Tokenomics = () => {
             <div className={'slightly-bolder'}>Snowge is 100% rug free and we have the receipts to prove it.</div>
             <div className={'flex-row wrap x-centre'}>
                 <Button className={'snowge-button tokendata-button goswap-button'}
-                        href="https://snowge.s3.amazonaws.com/Snowge+Coin(1).pdf"
+                        href="https://github.com/TechRate/Smart-Contract-Audits/blob/main/Snowge%20Coin.pdf"
                         target="_blank" rel="noreferrer"><img src={techRateLogo} className="audit-logo"/></Button>
             </div>
         </div>

@@ -77,9 +77,9 @@ const SnowgeIntroduction = () => {
                     <div>Transactions</div>
                 </div>
                 <div className={'flex-column y-centre number-entry'}>
-                    <div id="totalHolders" className={'number-text'}><CountUp start={0} separator="," end={1700}
+                    <div id="totalHolders" className={'number-text'}><CountUp start={0} separator="," end={1800}
                                                                               delay={0} easingFn={easingFn}
-                                                                              duration={4}/>+
+                                                                              duration={2}/>+
                     </div>
 
                     <div>Unique Holders</div>

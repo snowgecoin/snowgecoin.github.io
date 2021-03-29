@@ -79,7 +79,9 @@ function fetchContent(index) {
                             <span>&nbsp;-&nbsp;</span>
                             <div>CMC, CG, and Blockfolio Listing</div>
                         </div>
-                        <div className={'milestone-content flex-row wrap'}>Spreading the word one website at a time.
+                        <div className={'milestone-content flex-row wrap'}>Spreading the word one website at a time. So far,
+                            we've been listed on Blockfolio - CoinMarketCap, CoinGecko, and BSCScan social profiles have been
+                            applied for.
                         </div>
                     </div>
                     <div className={'milestone-container fade-animation'}>
@@ -99,7 +101,7 @@ function fetchContent(index) {
                             <div className={'not-passed milestone-complete'}></div>
                             <div className={'slightly-bolder'}>Milestone 3</div>
                             <span>&nbsp;-&nbsp;</span>
-                            <div>CEX Listings (Ideal Timeline)</div>
+                            <div>CEX Listings (In Talks)</div>
                         </div>
                         <div className={'milestone-content flex-row wrap'}>Can you boys, girls, and enbys imagine the
                             level of mooning we would achieve??
@@ -113,6 +115,16 @@ function fetchContent(index) {
                             <div>SFSR Charitable Donation Fund</div>
                         </div>
                         <div className={'milestone-content flex-row wrap'}>Saving the floofs is one of our highest priorities.
+                        </div>
+                    </div>
+                    <div className={'milestone-container fade-animation'}>
+                        <div className={'flex-row y-centre wrap milestone-header'}>
+                            <div className={'not-passed milestone-complete'}></div>
+                            <div className={'slightly-bolder'}>Milestone 5</div>
+                            <span>&nbsp;-&nbsp;</span>
+                            <div>Partnerships</div>
+                        </div>
+                        <div className={'milestone-content flex-row wrap'}>Details coming soon!
                         </div>
                     </div>
                 </div>

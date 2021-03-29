@@ -30,7 +30,7 @@ const RoadMap = () => {
                         <div className={'passed milestone-complete rm-complete'}></div>
                         <div className={'slightly-bolder'}>Milestone 4</div>
                         <span>&nbsp;-&nbsp;</span>
-                        <div>TechRate Audit (<a href="https://snowge.s3.amazonaws.com/Snowge+Coin(1).pdf" target="_blank">Passed</a>!)</div>
+                        <div>TechRate Audit (<a href="https://github.com/TechRate/Smart-Contract-Audits/blob/main/Snowge%20Coin.pdf" target="_blank">Passed</a>!)</div>
                     </div>
                 </div>
                 <div className={'flex-column quarter-card'}>
@@ -39,7 +39,7 @@ const RoadMap = () => {
                         <div className={'not-passed milestone-complete rm-complete'}></div>
                         <div className={'slightly-bolder'}>Milestone 1</div>
                         <span>&nbsp;-&nbsp;</span>
-                        <div>CoinMarketCap, CoinGecko, and Blockfolio Listing</div>
+                        <div>CoinMarketCap, CoinGecko, and Blockfolio Listing (1/3)</div>
                     </div>
                     <div className={'flex-row wrap milestone-header rm-milestone'}>
                         <div className={'not-passed milestone-complete rm-complete'}></div>
@@ -51,13 +51,19 @@ const RoadMap = () => {
                         <div className={'not-passed milestone-complete rm-complete'}></div>
                         <div className={'slightly-bolder'}>Milestone 3</div>
                         <span>&nbsp;-&nbsp;</span>
-                        <div>CEX Listings (Ideal Timeline)</div>
+                        <div>CEX Listings (In Talks)</div>
                     </div>
                     <div className={'flex-row wrap milestone-header rm-milestone'}>
                         <div className={'not-passed milestone-complete rm-complete'}></div>
                         <div className={'slightly-bolder'}>Milestone 4</div>
                         <span>&nbsp;-&nbsp;</span>
                         <div>SFSR Charitable Donation Fund</div>
+                    </div>
+                    <div className={'flex-row wrap milestone-header rm-milestone'}>
+                        <div className={'not-passed milestone-complete rm-complete'}></div>
+                        <div className={'slightly-bolder rm-complete'}>Milestone 5</div>
+                        <span>&nbsp;-&nbsp;</span>
+                        <div>Partnerships (Details Coming Soon)</div>
                     </div>
                 </div>
                 <div className={'flex-column quarter-card'}>
