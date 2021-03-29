@@ -1,0 +1,2 @@
+(self.webpackChunksnowge=self.webpackChunksnowge||[]).push([[25],{1755:function(e,l,n){"use strict";n.r(l);var a=n(7294),c=n(2587),s=n(3771);l.default=function(){return a.createElement("div",{className:"app-background flex-column scrollbar"},a.createElement(c.Z,null),a.createElement("span",{className:"flex-spacer"}),a.createElement(s.Z,null))}}}]);
+//# sourceMappingURL=component---src-pages-floofypaper-js-17b03bf282963e84750c.js.map
