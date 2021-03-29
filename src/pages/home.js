@@ -41,6 +41,9 @@ const Home = () => {
                     <div className={'flex-column x-centre y-centre home-banner'}>
                         <SnowgeIntroduction/>
                     </div>
+                    {/*<div className={'flex-column x-centre y-centre donate-banner'}>*/}
+                    {/*    not yet*/}
+                    {/*</div>*/}
                     <div className={'flex-column x-centre y-centre how-to-buy-banner'}>
                         <HowToBuy/>
                     </div>
@@ -50,13 +53,7 @@ const Home = () => {
                     <div className={'flex-column x-centre y-centre roadmap-banner'}>
                         <RoadMap/>
                     </div>
-                    {/*<div className={'flex-column x-centre y-centre donate-banner'}>*/}
-                    {/*    not yet*/}
-                    {/*</div>*/}
                     <Socials/>
-                    <div className={'flex-row x-centre construction-text'}>*This site is still buried under a snowgestorm.
-                        Emergency crews are working around the clock to dig it back up!*
-                    </div>
                 </div>
         </div>
     )

@@ -93,7 +93,7 @@ const HowToBuy = () => {
     return (
         <div className={'flex-column y-centre x-centre how-to-buy-container'}>
             <div className={'giga-large-font slightly-bolder how-to-title'}>How to Buy</div>
-            <ButtonGroup size="large" color="primary" aria-label="large outlined primary button group">
+            <ButtonGroup size="medium" color="primary" aria-label="large outlined primary button group">
               <Button className="less-button-padding" onClick={() => setActiveNode(0)}><img src={trustLogo} className={"wallet-icon"}/></Button>
               <Button className="less-button-padding" onClick={() => setActiveNode(1)}><img src={metamaskLogo} className={"wallet-icon"}/></Button>
             </ButtonGroup>

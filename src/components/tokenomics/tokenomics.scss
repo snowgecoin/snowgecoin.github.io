@@ -1,3 +1,5 @@
+@import "src/scss/colours";
+
 .tokenomics-container {
   margin: 2vw;
   width: 90%;
@@ -16,4 +18,9 @@
 
 .token-spacer {
   margin-top: 40px;
+}
+
+.audit-logo {
+  height: 80%;
+  width: 80%;
 }

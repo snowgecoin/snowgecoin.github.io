@@ -1,5 +1,7 @@
 import * as React from "react"
 import "./tokenomics.scss";
+import techRateLogo from "../../images/audits/techratelogo.png";
+import Button from "@material-ui/core/Button";
 
 // TODO - Superfly or Eggs write here the descriptions we agree on
 const Tokenomics = () => {
@@ -26,8 +28,14 @@ const Tokenomics = () => {
                 withdraw the collected fees from the LP. As far as we can tell we are one of very few to have done this fairly and openly, as we burned $18,000 worth of liquidity pool tokens and then
                 renounced the token contract by transferring its ownership to a burned address. We are a purely non-profit team, and the SnowgeCoin token runs solely on community. <b>Community over greed, always.</b>
             </span>
-            <div className={'token-spacer'}>Please note Snowge is all our original IP and all assets are owned by us.</div>
+            <div className={'token-spacer'}>Please note Snowge is all our original IP and all assets are owned by us.
+            </div>
             <div className={'slightly-bolder'}>Snowge is 100% rug free and we have the receipts to prove it.</div>
+            <div className={'flex-row wrap x-centre'}>
+                <Button className={'snowge-button tokendata-button goswap-button'}
+                        href="https://snowge.s3.amazonaws.com/Snowge+Coin(1).pdf"
+                        target="_blank" rel="noreferrer"><img src={techRateLogo} className="audit-logo"/></Button>
+            </div>
         </div>
     )
 };

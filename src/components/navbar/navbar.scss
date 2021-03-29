@@ -1,17 +1,23 @@
 @import "src/scss/colours";
 
 #floofyboi {
-  width: 80px;
-  border-radius: 50%;
+  width: calc(2vw + 30px);
+  max-width: 60px;
 }
 
 .navbar-wrapper {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  position: relative;
   box-sizing: border-box;
-  padding: 1vh 6vw;
-  z-index: 10;
+  padding: 2vh 6vw;
+  width: 100%;
+  z-index: 100;
 }
 
 .remove-background {
@@ -27,10 +33,6 @@
   // box-shadow: 0px 1px #888888;
 }
 
-.navbar-wrapper > * {
-  margin: 10px;
-}
-
 .token-container {
   flex: 1 1 auto;
   text-decoration: none;
@@ -41,12 +43,11 @@
 }
 
 .nav-header {
-  margin-left: 20px;
+  margin-left: 10px;
   font-weight: bold;
   color: $snowge-dark-blue;
-  // font-family: Baloo-Regular;
   text-shadow: 1px 1px #DDDDDD;
-  // font-size: 60px !important;
+  font-size: min(calc(2vw + 14px), 30px);
 }
 
 .header-logo {
@@ -57,15 +58,6 @@
 .countdown-container {
   margin-left: 8vw;
   margin-right: 8vw;
-}
-
-.construction-text {
-  color: $snowge-dark-blue;
-  font-size: calc(10px + 0.2vw);
-  margin-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  text-align: center;
 }
 
 .link-text {
@@ -99,4 +91,79 @@
 
 .snow-button:hover {
   color: $snowge-dark-blue;
+}
+
+
+/*Desktop View*/
+.nav-options {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-icon {
+  display: none !important;
+}
+
+.mobile-option {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 648px) {
+  /*Mobile View */
+  .nav-options {
+    width: 100%;
+    position: absolute;
+    height: 0;
+    top: 100%;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+  }
+  .nav-options.active {
+    display: flex;
+    flex-direction: column;
+    background: $snowge-white;
+    height: 240px;
+    transition: all 0.5s ease;
+  }
+
+  .menu-icon {
+    display: inline-block !important;
+    width: 30px !important;
+    height: 30px !important;
+    color: $snowge-dark-blue
+  }
+
+  .option {
+    display: none;
+    opacity: 0;
+  }
+
+  .option.active {
+    display: flex;
+    align-items: center;
+    height: 10vw;
+    padding: 30px 0;
+    opacity: 1;
+    animation: option-fade 0.5s ease;
+  }
+}
+
+.mobile-menu {
+  display: block;
+}
+
+@keyframes option-fade {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

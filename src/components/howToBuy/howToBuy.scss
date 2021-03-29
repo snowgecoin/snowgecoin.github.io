@@ -1,5 +1,5 @@
 .how-to-buy-container {
-  margin: 2vw;
+  margin: 0 2vw 2vw;
   width: 90%;
   max-width: 1000px;
   box-sizing: border-box;
@@ -34,6 +34,6 @@
 
 .wallet-icon {
   position: relative;
-  height: 60px;
-  width: 100px;
+  height: calc(3vw + 20px);
+  max-height: 50px;
 }

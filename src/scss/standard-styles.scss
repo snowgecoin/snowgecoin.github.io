@@ -41,9 +41,11 @@ html, body {
 }
 
 .tokenomics-banner {
+  background-color: $snowge-white;
 }
 
 .how-to-buy-banner {
+  margin-bottom: 30px;
 }
 
 .roadmap-banner {
@@ -122,4 +124,12 @@ html, body {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.text-decoration-none:hover {
+  text-decoration: none;
 }
