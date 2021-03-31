@@ -5,6 +5,7 @@ import twitterIcon from "../../images/socials/twitter.svg";
 import telegramIcon from "../../images/socials/telegram.svg";
 import redditIcon from "../../images/socials/reddit.svg";
 import mediumIcon from "../../images/socials/medium.svg";
+import youtubeIcon from "../../images/socials/youtube.svg";
 import "./socials.scss";
 import Tooltip from "@material-ui/core/Tooltip";
 import {AcUnitRounded} from "@material-ui/icons";
@@ -39,6 +40,12 @@ const Socials = () => {
                 <IconButton aria-label="Medium" href="https://snowgecoin.medium.com" target="_blank"
                             style={{color: '#0F4395'}}>
                     <img src={mediumIcon} alt={'medium logo'} height={18} width={18}/>
+                </IconButton>
+            </Tooltip>
+            <Tooltip title="Youtube" enterDelay={600}>
+                <IconButton aria-label="Youtube" href="https://www.youtube.com/channel/UCYXES0sbHwh6xvwA6sRtONQ" target="_blank"
+                            style={{color: '#0F4395'}}>
+                    <img src={youtubeIcon} alt={'youtube logo'} height={18} width={18}/>
                 </IconButton>
             </Tooltip>
         </div>

@@ -31,6 +31,7 @@ const SnowgeIntroduction = () => {
             <Button variant="contained" size="large" className={'snowge-button pcs-button'}
                     href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x5e9280d53f28281ce098c8f64e49f5f5dc9ea185"
                     target="_blank" rel="noreferrer">Buy on Pancake Swap</Button>
+                    <div>Need help? <a href="https://www.youtube.com/watch?v=xZyiGE2cW6M" target="_blank">Check out this video.</a></div>
             <div className={'snowge-buttons-div flex-row wrap x-centre'}>
                 <Button variant="outlined" className={'snowge-button tokendata-button goswap-button'}
                         href="https://goswappcharts.web.app/?isbsc=true&tokenId=0x5E9280d53F28281Ce098C8F64e49F5f5DC9Ea185"
