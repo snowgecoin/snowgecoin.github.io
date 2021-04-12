@@ -1,8 +1,0 @@
-install instructions
-
-extract home folder to public\home
-extract snowgeIntroduction.js into src\components\snowgeIntroduction
-
-finished
-
-once payment is received I'l send you public\home\dashboard-widget.js original code so you can make any further changes you want
