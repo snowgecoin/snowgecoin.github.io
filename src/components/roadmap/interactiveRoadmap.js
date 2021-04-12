@@ -112,7 +112,7 @@ function fetchContent(index) {
                             <div className={'not-passed milestone-complete'}></div>
                             <div className={'slightly-bolder'}>Milestone 4</div>
                             <span>&nbsp;-&nbsp;</span>
-                            <div>SFSR Charitable Donation Fund</div>
+                            <div>Charitable Donation Fund</div>
                         </div>
                         <div className={'milestone-content flex-row wrap'}>Saving the floofs is one of our highest priorities.
                         </div>

@@ -1,0 +1,43 @@
+.team-grid-container {
+  margin: 4vw;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.team-grid-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.team-grid-subtitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.team-card {
+  margin: calc(10px + 2vw);
+  background-color: white;
+  border-radius: 7px;
+  min-height: 300px;
+  width: 260px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+}
+
+.team-card-content {
+  padding: 16px;
+}
+
+.team-button {
+  position: absolute !important;
+  right: 0;
+  bottom: 0;
+}
+
+.team-pic {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  height: 200px;
+  width: 260px;
+}
+

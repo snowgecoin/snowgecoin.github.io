@@ -57,7 +57,7 @@ const RoadMap = () => {
                         <div className={'not-passed milestone-complete rm-complete'}></div>
                         <div className={'slightly-bolder'}>Milestone 4</div>
                         <span>&nbsp;-&nbsp;</span>
-                        <div>SFSR Charitable Donation Fund</div>
+                        <div>Charitable Donation Fund</div>
                     </div>
                     <div className={'flex-row wrap milestone-header rm-milestone'}>
                         <div className={'not-passed milestone-complete rm-complete'}></div>

@@ -1,0 +1,12 @@
+.footer-container {
+  min-height: 60px;
+  margin: 20px 6vw;
+}
+
+@media (max-width: 748px) {
+  /*Mobile View */
+  .copyright {
+    text-align: center;
+  }
+}
+

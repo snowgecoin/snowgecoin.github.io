@@ -1,0 +1,53 @@
+@import "src/scss/colours";
+
+.about-container {
+  margin: 4vw;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.about-title {
+  font-size: 32px;
+}
+
+.about-subtitle {
+  font-size: 24px;
+}
+
+.bold {
+  font-weight: bold;;
+}
+
+.margin-bottom {
+  margin-bottom: calc(20px + 2vh);
+}
+
+.snowge-png {
+  height: 50px;
+  margin-left: 20px;
+}
+
+.double-snowge-png {
+  height: 40px;
+  margin-left: 20px;
+}
+
+.about-column {
+  width: 48%;
+  margin: 10px;
+  min-width: 300px;
+}
+
+.snowge-white-bg {
+  background-color: #f4f7fb;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.line-div {
+  position: relative;
+  top: -20px;
+  margin-right: 20px;
+  border-bottom: 1px solid #5a6169;
+}

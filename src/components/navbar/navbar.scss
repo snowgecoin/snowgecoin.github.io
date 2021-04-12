@@ -2,7 +2,7 @@
 
 #floofyboi {
   width: calc(3vw + 50px);
-  max-width: 100px;
+  max-width: 80px;
 }
 
 .navbar-wrapper {
@@ -20,17 +20,31 @@
   z-index: 100;
 }
 
+.navbar-socials {
+  position: absolute;
+  right: calc(6vw - 10px);
+  top: 1vh;
+  z-index: 0;
+}
+
 .remove-background {
   background-color: transparent;
   transition: background-color 200ms linear;
-  // box-shadow: 0px 0px #ffffff;
-
 }
 
 .navbar-background {
-  background-color: $snowge-white;
+  background-color: $snowge-light-blue;
   transition: background-color 200ms linear;
-  // box-shadow: 0px 1px #888888;
+}
+
+.white-nav-text {
+  color: white;
+  transition: color 200ms linear;
+}
+
+.dark-nav-text {
+  color: $snowge-dark-blue;
+  transition: color 200ms linear;
 }
 
 .token-container {
@@ -45,8 +59,6 @@
 .nav-header {
   margin-left: 10px;
   font-weight: bold;
-  color: $snowge-dark-blue;
-  text-shadow: 1px 1px #DDDDDD;
   font-size: min(calc(2vw + 14px), 30px);
 }
 
@@ -62,17 +74,28 @@
 
 .link-text {
   margin-left: 20px;
-  color: $snowge-light-blue;
+  color: white;
   text-decoration: none;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .link-text:hover {
+  color: white;
   text-decoration: none;
-  color: $snowge-dark-blue;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  transition: all 0.05s linear;
 }
 
 .active-page {
-  color: $snowge-pink !important; // Keep active page pink on hover
+  position: absolute;
+  height: 4px;
+  width: 26px;
+  border-radius: 2px;
+  background-color: white;
 }
 
 .new-tab-icon {
@@ -84,20 +107,23 @@
 }
 
 .snow-button {
-  color: $snowge-light-blue;
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
 }
 
-.snow-button:hover {
-  color: $snowge-dark-blue;
+.snow-icon {
+  color: white;
+  height: 18px !important;
+  width: 18px !important;
 }
-
 
 /*Desktop View*/
 .nav-options {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  margin-top: 10px;
 }
 
 .menu-icon {
@@ -112,7 +138,25 @@
   display: none;
 }
 
-@media (max-width: 648px) {
+.buy-now-button {
+  border-radius: 20px;
+  height: 30px !important;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+  padding-right: 12px;
+  padding-left: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-image: linear-gradient(to right, #f1f7fb 0%, #b8d8e7 51%, #f1f7fb 100%);
+  background-size: 200% auto;
+}
+
+.buy-now-button:hover {
+  background-position: right center;
+  transition: background-position 0.1s linear;
+}
+
+@media (max-width: 768px) {
   /*Mobile View */
   .nav-options {
     width: 100%;
@@ -121,20 +165,37 @@
     top: 100%;
     transition: all 0.5s ease;
     box-sizing: border-box;
+    z-index: 1;
+    margin-top: 0;
   }
+
+  .active-page {
+    top: 44px;
+  }
+
+  .buy-now-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   .nav-options.active {
     display: flex;
     flex-direction: column;
-    background: $snowge-white;
-    height: 240px;
+    background: $snowge-light-blue;
+    height: 280px;
     transition: all 0.5s ease;
+  }
+
+  .navbar-socials {
+    right: 0;
+    top: 0;
+    position: relative;
   }
 
   .menu-icon {
     display: inline-block !important;
     width: 30px !important;
     height: 30px !important;
-    color: $snowge-dark-blue
   }
 
   .option {
@@ -145,10 +206,10 @@
   .option.active {
     display: flex;
     align-items: center;
-    height: 10vw;
-    padding: 30px 0;
+    height: 60px;
     opacity: 1;
     animation: option-fade 0.5s ease;
+    margin-left: 0;
   }
 }
 

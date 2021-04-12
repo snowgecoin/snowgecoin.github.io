@@ -19,7 +19,7 @@ html, body {
 
 .app-background {
   background-image: linear-gradient(
-                  -35deg, $snowge-blue-white 0%, $snowge-white 100%);
+                  -50deg, $snowge-light-blue 0%, $snowge-grey 100%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -41,14 +41,15 @@ html, body {
 }
 
 .tokenomics-banner {
-  background-color: $snowge-white;
+  background-color: white;
 }
 
 .how-to-buy-banner {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .roadmap-banner {
+  background-color: white;
 }
 
 .donate-banner {
