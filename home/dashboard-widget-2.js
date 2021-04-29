@@ -2,13 +2,13 @@
   let loadDashboard = () => {
     jQuery(document).ready(() => {
       console.log('dashboard-widget-starting');
-      let activeSupplyElement = jQuery('#activeSupply');
-      let activeBurnElement = jQuery('#activeBurn');
+      // let activeSupplyElement = jQuery('#activeSupply');
+      // let activeBurnElement = jQuery('#activeBurn');
       //let distributedTokensElement = jQuery('#distributedTokens');
       //let tokensInLPElement = jQuery('#tokensInLP');
       let marketCapElement = jQuery('#marketCap');
       let currentPriceElement = jQuery('#currentPrice');
-      let totalHoldersElement = jQuery('#totalHolders');
+      // let totalHoldersElement = jQuery('#totalHolders');
       //let transactionsElement = jQuery('#transactions');
 
       let holdersRefreshRate = 1000 * 60 * 15;
@@ -142,8 +142,10 @@
         if (busdQuote && tokenQuote && totalCirculatingSupply) {
             let realPrice = tokenQuote / busdQuote;;
             let marketCap = totalCirculatingSupply * realPrice;
-            currentPriceElement.html('$' + realPrice.toFixed(5));
-            marketCapElement.html('$' + parseInt(marketCap.toFixed(0)).toLocaleString());
+            window.localStorage.setItem('price', realPrice.toFixed(5));
+            window.localStorage.setItem('marketCap', parseInt(marketCap.toFixed(0)));
+            // currentPriceElement.html('$' + realPrice.toFixed(5));
+            // marketCapElement.html('$' + parseInt(marketCap.toFixed(0)).toLocaleString());
           }
           setTimeout(getPriceDataInterval, priceRefreshRate);
       };
@@ -153,8 +155,8 @@
         totalCirculatingSupply = parseInt(((await getSupply()) - totalBurn).toFixed(0));
         //let distributedTokens = await getTotalFees();
         //let tokensInLp = await getUnsoldTokens();
-        activeSupplyElement.html(totalCirculatingSupply.toLocaleString());
-        activeBurnElement.html(totalBurn.toLocaleString());
+        // activeSupplyElement.html(totalCirculatingSupply.toLocaleString());
+        // activeBurnElement.html(totalBurn.toLocaleString());
         //distributedTokensElement.html(distributedTokens.toLocaleString());
         //tokensInLPElement.html(tokensInLp.toLocaleString());
         setTimeout(() => {
@@ -185,7 +187,7 @@
           if (response.holders === 0){
             setTimeout(getRealTimeHolders, 2000);
           } else {
-            totalHoldersElement.html(response.holders.toLocaleString());
+            // totalHoldersElement.html(response.holders.toLocaleString());
 
             setTimeout(getRealTimeHolders, holdersRefreshRate);
           }
@@ -207,7 +209,7 @@
         const host = 'bsc-token-tools.com';
         const fqpn = protocol + '://' + host + ':8104/';
         webSocketInstance = io(fqpn);
-        getRealTimeHolders();
+        // getRealTimeHolders();
         //getRealTimeTransfers();
       };
 
@@ -219,9 +221,9 @@
         contractObject = await new web3.Contract(statsAbi, contractAddress);
         factoryContract = await new web3.Contract(factoryAbi, masterChefAddress);
         tokenDecimals = await contractObject.methods.decimals().call();
-        await getWeb3Data();
+        // await getWeb3Data();
         getPriceDataInterval();
-        getHostedData();
+        // getHostedData();
       };
 
       //setTimeout()
