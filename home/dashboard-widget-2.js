@@ -221,7 +221,7 @@
         contractObject = await new web3.Contract(statsAbi, contractAddress);
         factoryContract = await new web3.Contract(factoryAbi, masterChefAddress);
         tokenDecimals = await contractObject.methods.decimals().call();
-        // await getWeb3Data();
+        await getWeb3Data();
         getPriceDataInterval();
         // getHostedData();
       };
