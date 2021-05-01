@@ -142,8 +142,8 @@
         if (busdQuote && tokenQuote && totalCirculatingSupply) {
             let realPrice = tokenQuote / busdQuote;;
             let marketCap = totalCirculatingSupply * realPrice;
-            window.localStorage.setItem('price', realPrice.toFixed(5));
-            window.localStorage.setItem('marketCap', parseInt(marketCap.toFixed(0)));
+            window.sessionStorage.setItem('price', realPrice.toFixed(5));
+            window.sessionStorage.setItem('marketCap', parseInt(marketCap.toFixed(0)));
             // currentPriceElement.html('$' + realPrice.toFixed(5));
             // marketCapElement.html('$' + parseInt(marketCap.toFixed(0)).toLocaleString());
           }
