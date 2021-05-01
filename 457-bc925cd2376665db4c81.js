@@ -1,0 +1,2 @@
+(self.webpackChunksnowge=self.webpackChunksnowge||[]).push([[457],{457:function(e,n,u){"use strict";u.r(n);var t=u(7294);n.default=function(){return t.createElement("div",null,"Coming Soon!")}}}]);
+//# sourceMappingURL=457-bc925cd2376665db4c81.js.map
